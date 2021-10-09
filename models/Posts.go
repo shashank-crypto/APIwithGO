@@ -7,9 +7,9 @@ import (
 )
 
 type Posts struct {
-	Id       primitive.ObjectID `json:"id" bson:"_id"`
+	Id       primitive.ObjectID `json:"id" bson:"_id" validate:"nil=false"`
 	Caption  string             `json:"caption" bson:"caption"`
-	ImageUrl string             `json:"imageUrl" bson:"imageUrl"`
-	Author   string             `json:"author" bson:"author"`
+	ImageUrl string             `json:"imageUrl" bson:"imageUrl" validate:"nil=false"`
+	Author   string             `json:"author" bson:"author" validate:"nil:false"`
 	Time     time.Time          `json:"time" bson:"time"`
 }
