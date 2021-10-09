@@ -43,7 +43,15 @@ Design and Develop an HTTP JSON API capable of the following operations,<br>
 
 - instagram
     - posts
+        - _id
+        - caption
+        - author
+        - PostedTimeStamp
     - users
+        - _id
+        - name
+        - email
+        - password (hashed)
 
 Testing the API endpoints and there result
 ![test report](/resource/test.png)
